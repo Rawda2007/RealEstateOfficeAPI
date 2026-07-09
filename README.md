@@ -157,8 +157,8 @@ You can add screenshots of:
 
 **Rawda Eweda**
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://www.linkedin.com/in/your-profile
+- GitHub:https://github.com/Rawda2007
+- LinkedIn: https://www.linkedin.com/in/rawda-eweda-b1b5ab376/
 
 ---
 
