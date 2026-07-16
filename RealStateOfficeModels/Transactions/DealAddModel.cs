@@ -6,18 +6,10 @@ using System.Threading.Tasks;
 
 namespace RealStateOfficeModels.Transactions
 {
-    public class DealModel
+    public class DealAddModel
     {
-        public int DealID { get; set; }
-
         public int PropertyID { get; set; }
 
-        public int ClientID { get; set; }
-
-        public DateTime DealDate { get; set; }
-
         public decimal Amount { get; set; }
-
-        public int StatusID { get; set; }
     }
 }

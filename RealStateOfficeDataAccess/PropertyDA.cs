@@ -561,5 +561,28 @@ WHERE PropertyID=@PropertyID
 
             return (int)cmd.ExecuteScalar() > 0;
         }
+
+        public static bool ChangeStatus(int propertyID, int statusID)
+        {
+            using SqlConnection con =
+                new SqlConnection(DbConnection.StringConnection);
+
+            string query =
+            @"
+UPDATE Property
+SET StatusID=@StatusID
+WHERE PropertyID=@PropertyID
+";
+
+            SqlCommand cmd =
+                new SqlCommand(query, con);
+
+            cmd.Parameters.AddWithValue("@PropertyID", propertyID);
+            cmd.Parameters.AddWithValue("@StatusID", statusID);
+
+            con.Open();
+
+            return cmd.ExecuteNonQuery() > 0;
+        }
     }
 }

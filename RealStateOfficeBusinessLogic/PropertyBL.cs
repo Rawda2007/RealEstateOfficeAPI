@@ -45,5 +45,10 @@ namespace RealEstateOfficeBusinessLogic
         {
             return PropertyDA.IsExist(propertyID);
         }
+
+        public bool ChangeStatus(int propertyID, int statusID)
+        {
+            return PropertyDA.ChangeStatus(propertyID, statusID);
+        }
     }
 }
